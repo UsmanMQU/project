@@ -31,9 +31,9 @@ public class service
 		json = new JSONObject(map);
 		return json.toString();		
 	}
-	public int times()
+	public int times(String John)
 	{
-		String[] accountArray = json.toString().split("firstName=John");
+		String[] accountArray = json.toString().split(John);
 	    int counter=-1;
 	    for(String name : accountArray)
 	    {
